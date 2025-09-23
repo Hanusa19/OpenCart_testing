@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="CrossBrowsing Suite" thread-count="5" parallel="tests">
+
+    <listeners>
+     <listener class-name="utilities.ExtentReportManager"/>
+    </listeners>
+
+	<test name="chrometest">
+		<parameter name="OS" value="Windows" />
+		<parameter name="Browser" value="chrome" />
+		<classes>
+			<class name="testCases.TC001_AccountRegistrationTest" />
+		</classes>
+	</test> <!-- Test -->
+  
+  	<test name="edgetest">
+		<parameter name="OS" value="Windows" />
+		<parameter name="Browser" value="edge" />
+		<classes>
+			<class name="testCases.TC001_AccountRegistrationTest" />
+		</classes>
+	</test> <!-- Test -->
+	
+		<test name="firefoxtest">
+		<parameter name="OS" value="Windows" />
+		<parameter name="Browser" value="firefox" />
+		<classes>
+			<class name="testCases.TC001_AccountRegistrationTest" />
+		</classes>
+	</test> <!-- Test -->
+  
+  
+  
+</suite> <!-- Suite -->
